@@ -15,8 +15,6 @@ const actions = [
 
 // LIVE MESSAGES
 function generateMessages() {
-    return; // completely disable
-}
 
 const box = document.getElementById('liveMessages');
 if(!box) return;
