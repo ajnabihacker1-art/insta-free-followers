@@ -14,7 +14,7 @@ const actions = [
 
 
 // LIVE MESSAGES
-function 
+function generateMessages();
 
 const box = document.getElementById('liveMessages');
 if(!box) return;
