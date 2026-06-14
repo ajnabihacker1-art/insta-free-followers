@@ -14,9 +14,9 @@ const actions = [
 
 
 // LIVE MESSAGES
-function // window.addEventListener("DOMContentLoaded", () => {
-//     generateMessages();
-// });
+function window.addEventListener("DOMContentLoaded", () => {
+    generateMessages();
+});
 
 const box = document.getElementById('liveMessages');
 if(!box) return;
